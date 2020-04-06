@@ -1,0 +1,9 @@
+syntax = "proto3";
+
+package proto;
+
+message Request { string helloReq = 1; }
+
+message Response { string helloRes = 1; }
+
+service HelloService { rpc Hello(Request) returns (Response); }
